@@ -8,3 +8,5 @@ wheels/
 
 # Virtual environments
 .venv
+# CocoIndex Code (ccc)
+/.cocoindex_code/
