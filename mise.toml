@@ -1,0 +1,11 @@
+[tools]
+uv = "latest"
+
+[settings]
+python.uv_venv_auto = "source"
+
+[tasks.fmt]
+run = "ruff format"
+
+[tasks.ci]
+run = ["ruff format --check", "ty check", "ruff check", "pytest"]
