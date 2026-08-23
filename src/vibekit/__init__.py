@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from vibekit!")
+from vibekit.router import router
+
+__all__ = ["router"]
