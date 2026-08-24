@@ -1,16 +1,26 @@
 [project]
 name = "vibekit"
 version = "0.1.0"
-description = "Add your description here"
+description = "An app framework for vibe coders"
 readme = "README.md"
 requires-python = ">=3.14"
+authors = [
+    { name = "Jan Ehrhardt", email = "jan.ehrhardt@gmail.com" },
+]
+license = "Apache-2.0"
 dependencies = [
-    "fastapi[standard-no-fastapi-cloud-cli]>=0.141.1",
-    "pydantic>=2.13.4",
+    "typer>=0.19.0",
 ]
 
 [project.scripts]
 vibekit = "vibekit:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.0",
+    "ty>=0.0.39",
+    "pytest>=9.0.0",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]

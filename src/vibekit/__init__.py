@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from vibekit!")
+from vibekit.cli import main
+
+__all__ = ["main"]
