@@ -1,3 +1,2 @@
-from vibekit.router import router
-
-__all__ = ["router"]
+def main() -> None:
+    print("Hello from vibekit!")
